@@ -1,22 +1,22 @@
 /*
- * File: 4-print_most_numbers.c
- * Auth: Suara Ayomide
+ * File: 3-islower.c
+ * Auth: Rolivhuwa
  */
 
 #include "main.h"
 
 /**
- * print_most_numbers - Prints the numbers from 0-9 except for 2 and 4.
+ * _isalpha - Checks if a character is alphabetic.
+ * @c: The character to be checked.
+ *
+ * Return: 1 if character is letter, lowercase or uppercase, 0 otherwise.
  */
-void print_most_numbers(void)
+int _isalpha(int c)
 {
-	int num;
-
-	for (num = 0; num <= 9; num++)
-	{
-		if (num != 2 && num != 4)
-			_putchar((num % 10) + '0');
-	}
-
-	_putchar('\n');
+	if ((c >= 'a' && c <= 'z') ||
+	    (c >= 'A' && c <= 'Z'))
+		return (1);
+	else
+		return (0);
 }
+

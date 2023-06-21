@@ -1,16 +1,22 @@
-#include "main.h"
-
-/**
- * print_numbers - prints numbers between 0 to 9.
- * Return: no return.
+/*
+ * File: 3-islower.c
+ * Auth: Rolivhuwa
  */
-void print_numbers(void)
-{
-	int ch;
 
-	for (ch = 48; ch < 58; ch++)
+#include "main.h"
+/**
+  * _islower - Checks for lowercase character
+  * @c: The character to be checked
+  *
+  * Return: 1 for lowercase character or 0 for anything else
+  */
+int _islower(int c)
+{
+	if (c >= 97 && c <= 122)
 	{
-		_putchar(ch);
+		return (1);
 	}
-	_putchar('\n');
+
+	return (0);
 }
+
