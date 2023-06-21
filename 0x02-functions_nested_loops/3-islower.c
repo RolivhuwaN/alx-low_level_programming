@@ -1,18 +1,22 @@
 #include "main.h"
-#include <ctype.h>
+
 /**
- * _islower - check if the given character is lower case.
- * @c: character to test.
- *
- * Return: 1 (True) else 0 (False)
+ * _islower - Check Johnel
+ * @c: An input character
+ * Description: function uses _putchar function to print
+ * alphabet in lowercase 10 times
+ * Return: 1 if is lowercase or 0 if is uppercase
  */
-int _islower(char c)
+int _islower(int c)
 {
-	if (c >= 'a' && c <= 'z')
+	char i;
+	int lower = 0;
+
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		return (1);
+		if (i == c)
+			lower = 1;
 	}
-	return (0);
+
+	return (lower);
 }
-
-
